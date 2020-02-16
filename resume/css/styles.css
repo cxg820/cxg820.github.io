@@ -1,0 +1,20 @@
+.main-title {font-family:'Oswald', sans-serif; text-align: center;}
+body {background-color:#FEFBF5;}
+main{margin: 5% auto; width: 80%;}
+h1,h3 {font-family: 'Oswald', sans-serif;}
+p {font-family: 'Montserrat', sans-serif;}
+address {text-align: center;}
+.centerimg{display: block; margin-left: auto; margin-right:auto; width:50%}
+.centertext{display: block; text-align: center;}
+.box{width:200px;
+    height:200px;
+    border:hidden 5px;
+    padding:5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;}
+.table{border-bottom: 1px solid #ddd; text-align: center;margin-left:auto; margin-right:auto;}
+tr:hover {background-color: LightGreen;}
+a:link{text-decoration: none; color: blue;} 

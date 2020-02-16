@@ -1,0 +1,4 @@
+.main-title {color: red;}
+<!--class,use multiple-->
+#main-text{color: green;}
+<!--id, only use once-->
