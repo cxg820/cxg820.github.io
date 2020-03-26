@@ -5,7 +5,7 @@
   background: #ccc;
 }
 .header-wrapper{
-  grid-column: 1/13;
+  grid-column: 1/12;
   grid-row:1;
 }
 .section-wrapper{
@@ -28,25 +28,25 @@
 
 .quad-section-wrapper{
   grid-column: 3/10;
-  grid-row: 9/12;
+  grid-row: 9/11;
 }
 #sic{text-align: center;}
 
 .nav-wrapper{
   grid-column: 1/3;
-  grid-row: 2/12;
+  grid-row: 2/11;
 }
 .side-wrapper{
-  grid-column:10/13;
-  grid-row:2/12;
+  grid-column:10/12;
+  grid-row:2/11;
   text-align: center;
 }
-.footer-wrapper{
-  grid-column: 1/13;
-  grid-row: 13;
+
+.gallery-wrapper{grid-column:1/12;
+grid-row:11/12;
 text-align: center;
 }
-#gallery{text-align:center;}
+#gallery{text-align: center;}
 
 h1,h3{font-family: 'Playfair Display', serif;text-align:center;}
 p{font-family: 'Playfair Display', serif;}
