@@ -1,0 +1,40 @@
+body{
+  background-image: url("../images/background.jpg"); 
+  background-size: cover;
+}
+
+header{
+  font-family: 'Fjalla';
+  color: #c65244;
+}
+h1{
+  font-family: 'Fjalla';
+  color: #c65244;
+}
+h2{ont-family:'Armino', sans-serif; color:#fbe4e0;}
+h3{font-family:'Roboto Condensed', sans-serif; color:#fbe4e0;font-size: 2rem;}
+p{font-family:'Roboto Condensed', sans-serif; color:white;}
+li{font-family:'Roboto Condensed'; color:white;}
+.hide{
+  display:none;
+}
+button{
+  background: red;
+  padding:.5rem 1rem;
+  font-size: 1rem;
+  color:white;
+}
+.clear{
+  clear: both;
+}
+.ingredients img{
+  position:absolute;
+  bottom: 9rem;
+  width:100%
+  height: auto;
+  display: none;
+}
+.ingredients p{
+  background: red;
+  display:table;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buffalo Wing Recipe</title>
+    <link rel="stylesheet" href="css/jQuery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <header>
+    <h1>BEST Buffalo Wing Recipe</h1>
+    <h3>Makes four servings</h3>
+  </header>
+
+  <section class="intro">
+    <p> This spicy buffalo chicken wing recipe is sure to satisfy your cravings. These wings are perfect for game day and family barbecues.
+      Every bit packs a punch of heat and flavor that will leave you wanting more. Hungry yet? Use the recipe below to make these wings at home.
+<br>
+<button class="step1" type="button" name="first">Step 1</button>
+  </section>
+
+  <section class="ingredients hide">
+    <h2>Ingredients</h2>
+    <img src="images/ingredients.png" alt="ingredients">
+    <h3>For the Chicken:</h3>
+    <ul>
+      <li> 2 lbs. fresh chicken wings</li>
+      <li> 1 cup all purpose flour</li>
+      <li> 2 cups canola oil</li>
+      <li>To taste: salt</li>
+      <li>To taste: pepper </li>
+      <li>To taste: cayenne pepper </li>
+      <li>To taste: garlic powder</li>
+    </ul>
+      <h3> For the Sauce:</h3>
+      <ul>
+        <li> 12 oz hot sauce of choice</li>
+        <li> 1 and a half sticks of butter</li>
+      </ul>
+<p class="ing">See Ingredients</p>
+<button class="step2" type="button" name="second">Step 2</button>
+</section>
+
+  <section class="mix hide">
+    <h2>Mix</h2>
+    <p>First mix the seasoning in the flour, then mix the chicken in with the seasoned flour to coat each wing.
+      In a seperate bowl melt the butter and mix with the hot sauce to create your buffalo sauce. </p>
+      <img src="images/flourwings.png" alt="flour chicken">
+      <img src="images/wingsauce.png" alt="sauce"> <br>
+      <button class="step3" type="button" name="third">Step 3</button>
+  </section>
+
+  <section class="cook hide">
+    <h2>Cook</h2>
+    <p>Fry the wings in canola oil until they float to the top of the oil and are golden-brown.</p>
+    <img src="images/crispywings.png" alt="fried wings"> <br>
+    <button class="step4" type="button" name="fourth">Step 4</button>
+  </section>
+
+  <section class="toss hide">
+    <h2>Toss</h2>
+    <p>Toss the cooked wings in the buffalo sauce until the wings are heavily coated.</p>
+    <img src="images/tosswings.png" alt="wings"> <br>
+    <button class="step5" type="button" name="fifth">Step 5</button>
+  </section>
+
+  <section class="serve hide">
+    <h2>Serve</h2>
+    <p> Serve wings with optional side of dipping sauces such as ranch or blue cheese, and celery or carrot sticks.</p>
+    <img src="images/final.png" alt="final">
+  </section>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+$("p.about").on({
+  mouseenter: function(){
+    $(".about img").fadeIn(1000);
+  },
+  mouseleave: function(){
+    $(".about img").fadeOut(1000);}
+});
+$(".step1").click(function(){
+  $(".intro").hide(1000);
+  $(".ingredients").show(1000);
+});
+$("p.ing").on({
+  mouseenter: function(){
+  $(".ingredients img").fadeIn(1000);
+},
+mouseleave: function(){
+  $(".ingredients img").fadeOut(1000);}
+});
+$(".step2").click(function(){
+  $(".ingredients").slideUp();
+  $(".mix").slideDown();
+});
+
+$(".step3").click(function(){
+  $(".mix").remove();
+  $(".cook").css("display","block");
+});
+$(".step4").click(function(){
+  $(".cook").slideUp();
+  $(".toss").slideDown();
+
+});
+$(".step5").click(function(){
+  $(".toss").slideUp("slow");
+  $(".serve").show();
+  $(".serve").after("<p class='final'>Dig In!</p>");
+});
+</script>
+</body>
+</html>
