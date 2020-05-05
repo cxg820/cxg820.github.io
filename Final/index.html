@@ -11,9 +11,97 @@
   gtag('config', 'UA-164022766-1');
 </script>
     <meta charset="utf-8">
-    <title></title>
+      <link rel="stylesheet" href="css/homepage.css">
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Mooch</title>
   </head>
   <body>
+    <main>
+<div class="main-wrapper">
 
+<header class="header-wrapper hide">
+  <h1>Mooch </h1><p>A clothing brand kinda.</p>
+</header>
+<div class="button-wrapper">
+<button class="enter" type="button" name="first">Click to Mooch</button>
+</div>
+<nav class="nav hide">
+
+  <a href="index.html">Home</a>
+  <a href="collections/page1.html">Puro</a>
+  <a href="collections/page2.html">Bum</a>
+  <a href="collections/page3.html">Il Male</a>
+</nav>
+
+<section class="content-wrapper hide">
+  <h1>About Us</h1>
+  <p>We mooch off the creativity and talent of other artists by taking stills from some of our favorite films and putting them on our T-Shirts. Yeah its a little pathetic, but hey what are you gonna do? Not everybody gets to be Pasolini, so we are who we are:</p>
+  <p>Mooch</p>
+  <p>Check out our collections: </p>
+  <p>Puro, Bum, and Il Male</p>
+</section>
+
+<section class="slideshow-wrapper hide">
+<div class="slides fade">
+  <img src="images/P.png">
+</div>
+
+<div class="slides fade">
+  <img src="images/B.png">
+</div>
+
+<div class="slides fade">
+  <img src="images/M.png">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</section>
+
+<footer class="footer-wrapper hide">
+  <h1>Thanks for stopping by!</h1>
+  <h2>And remember...</h2>
+  <h3>"Life is great. Without it, you'd be dead."</h3>
+
+</footer>
+
+</div>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(".enter").click(function(){
+  $(".content-wrapper").show();
+  $(".slideshow-wrapper").show();
+  $(".header-wrapper").show();
+  $(".nav").show();
+  $(".footer-wrapper").show();
+  $(".button-wrapper").hide();
+});
+</script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
   </body>
 </html>

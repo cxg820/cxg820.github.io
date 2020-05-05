@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164022766-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164022766-1');
+</script>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="../css/page.css">
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../drift/drift-basic.min.css">
+    <title>Il Male</title>
+  </head>
+
+  <body>
+<div class="main-wrapper">
+
+<header class="header-wrapper">
+  <h1>Mooch </h1><p>A clothing brand kinda.</p>
+</header>
+<nav class="nav">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <a href="../index.html">Home</a>
+  <a href="../collections/page1.html">Puro</a>
+  <a href="../collections/page2.html">Bum</a>
+  <a href="../collections/page3.html">Il Male</a>
+</nav>
+
+<section class="content-wrapper">
+  <h1>Il Male Black</h1>
+  <p>Try not to get killed by an abstraction.</p>
+
+  <div id="thumbnail-container">
+  <img class="drift-demo-trigger" data-zoom="../images/m2big.png" src="../images/m2.png">
+  </div>
+  <div id="details-container"></div>
+
+</section>
+
+</div>
+<script src="../drift/Drift.min.js"></script>
+<script>
+new Drift(document.querySelector('.drift-demo-trigger'), {
+  paneContainer: document.querySelector('#details-container'),
+  inlinePane: 500,
+  inlineOffsetY: -85,
+  containInline: true,
+  hoverBoundingBox: true
+});
+</script>
+  </body>
+</html>
